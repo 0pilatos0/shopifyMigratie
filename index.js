@@ -89,8 +89,9 @@ if (fs.existsSync('failed.json')) {
 
 let failed = [];
 newConnectors.forEach(element => {
-    if (Object.values(element).includes(null) || Object.values(element).includes('')) {
+    if (Object.values(element).includes(null) || Object.values(element).includes('') || Object.values(element).includes('undefined') || Object.values(element).includes(undefined)) {
         failed.push(element);
+        return;
     }
     insertString = `INSERT INTO connector (name, installation_date, apiurl, apikey, apisecret, erp, company_id, active, user_id, authorized, servicelayer_webhooks_registered, metadata) VALUES ('${element.name}', '${element.instalation_date}', '${element.apiurl}', '${element.apikey}', '${element.apisecret}', '${element.erp}', ${element.company_id}, ${element.active}, ${element.user_id}, ${element.authorized}, ${element.servicelayer_webhooks_registered}, '${element.metadata}');`;
     fs.appendFileSync('output.sql', insertString + '\r\n');
