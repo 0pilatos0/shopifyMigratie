@@ -1,4 +1,4 @@
-Coversion tool for old db format to new db format
+Conversion tool for old db format to new db format
 
 1. Install the tool
 2. export your db to JSON file
