@@ -74,7 +74,7 @@ input.forEach((item) => {
             connector.webshop_id
           }";s:10:"locationId";i:${
             connector.location
-          };s:14:"isUseStockSync";b:${isUseStockSync};s:16:"isUseShippingTag";b:${isUseShippingTag};s:18:"isUseSerialnumbers";b:${isUseSerialnumbers};s:11:"isUsePrices";b:${isUsePrices};s:16:"isNotifyShipment";b:${isNotifyShipment};s:25:"isUsePendingPaymentOrders";b:${isUsePendingPaymentOrders};s:23:"isUseOnlyLocationOrders";b:${isUseOnlyLocationOrders};s:10:"isMigrated";b:0;}`;
+          };s:14:"isUseStockSync";b:${isUseStockSync};s:16:"isUseShippingTag";b:${isUseShippingTag};s:18:"isUseSerialnumbers";b:${isUseSerialnumbers};s:11:"isUsePrices";b:${isUsePrices};s:16:"isNotifyShipment";b:${isNotifyShipment};s:25:"isUsePendingPaymentOrders";b:${isUsePendingPaymentOrders};s:23:"isUseOnlyLocationOrders";b:${isUseOnlyLocationOrders};s:14:"needsMigration";b:1;}`;
 
           delete element.__temp_id;
           delete element.__temp_access_token;
